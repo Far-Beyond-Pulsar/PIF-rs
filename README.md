@@ -17,7 +17,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-pulsar_image_format = { path = "../PIF-rs" }
+pulsar_image_format = { git = "https://github.com/Far-Beyond-Pulsar/PIF-rs" }
 ```
 
 ### Create a New PIF Asset
