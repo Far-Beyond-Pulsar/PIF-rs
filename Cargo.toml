@@ -1,0 +1,17 @@
+[package]
+name = "pulsar_image_format"
+version = "0.1.0"
+edition = "2021"
+authors = ["Pulsar Engine Team"]
+description = "Hybrid text/binary directory structure for real-time engine texture streaming with Git-friendly version control"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+qoi = "0.4"
+zip = { version = "2.2", default-features = false, features = ["deflate"] }
+
+[dev-dependencies]
+tempfile = "3.0"
