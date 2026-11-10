@@ -119,7 +119,7 @@ pub fn rebuild_archive<P: AsRef<Path>>(
         
         for i in 0..old_zip.len() {
             let mut file = old_zip.by_index(i)?;
-            let name = file.name().to_string();
+            let name = file.name()?.to_string();
             
             // Skip manifest (already wrote updated version)
             if name == "manifest.json" {
